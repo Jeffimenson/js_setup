@@ -27,6 +27,7 @@ const config = {
         new HtmlWebpackPlugin({
             title: 'My Website',
             template: 'src/index.html',
+            chunks: ['main'] // specifies what output scripts should be used in file. if empty, the generated html uses all of them
         }),
 
         // Add your plugins here
