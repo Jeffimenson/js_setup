@@ -1,0 +1,51 @@
+:root {
+    /* colors and other vars go here */ 
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body, html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button, input, label {
+    box-sizing:content-box;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    cursor: pointer;
+    display: block;
+}
+
+button:active, input:active, label:active{
+    cursor: default;
+}
+
+:where(textarea),
+:where(input[type="text"], input[type="search"], input[type="password"], input[type="url"]){
+  appearance: none;
+  border-style: solid;
+  outline: none;
+} 
+
+input::placeholder {
+    color: var(--pip-darkened);
+    color-scheme: var(--pip-darkened);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Actual custom styling things below */ 

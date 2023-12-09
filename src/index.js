@@ -1,9 +1,3 @@
-const name = 'James';
+import './style.css';
 
-const person = { first: name };
-console.log(person);
-const sayHelloLinting = (fName) => {
-    console.log(`Hello linting, ${fName}`);
-};
-
-sayHelloLinting(person.name);
+console.log('Hola el mundo.');
