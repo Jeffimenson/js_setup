@@ -12,8 +12,12 @@
         "ecmaVersion": "latest"
     },
     "rules": { 
-        "no-console": "off"//,
-        // "quotes": [ // Some rules have multiple inputs
+        "no-console": "off",
+        "no-param-reassign": "off",
+        "no-loop-func": "off"
+
+        // Some rules need multiple inputs
+        // "quotes": [ 
         //     "error",
         //     "double"
         // ]
