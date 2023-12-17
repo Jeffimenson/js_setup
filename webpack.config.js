@@ -15,7 +15,6 @@ const config = {
     output: {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        // clean: true, // Cant be true or else webpack watch will delete loaded images
     },
     devServer: {
         open: true,
