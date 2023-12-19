@@ -44,6 +44,22 @@ const config = {
                 test: /\.html$/i,
                 loader: 'html-loader',
             },
+            {
+                test: /\.(?:js|mjs|cjs)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            [
+                                '@babel/preset-env',
+                                { targets: '>0.25%', debug: true },
+                            ],
+                        ],
+                        cacheDirectory: true,
+                    },
+                },
+            },
 
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
